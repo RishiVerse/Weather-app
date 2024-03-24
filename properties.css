@@ -1,0 +1,66 @@
+.body1 {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+  }
+  
+  /* Header */
+  .header1 {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  .footer1 {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .card {
+    width: 90%;
+    max-width: 470px;
+    color: #fff;
+    margin: 100px auto 0;
+    padding: 40px 35 px;
+    text-align: center;
+  }
+  .search {
+    width: 100%;
+    align-items: center;
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  
+  .search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+  }
+  
+  .search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    height: 60px; /* Set height */
+    width: 60px; /* Set width */
+    border-radius: 50%; /* Make it completely round */
+    cursor: pointer;
+  }
+  .search button img {
+    width: 16px;
+  }
+  

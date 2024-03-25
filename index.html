@@ -46,7 +46,9 @@
         const apikey="5dae870b9bface08b9d7e71adf99c5a0";
         const apiUrl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
         var searchBox=document.querySelector(".search input");
-            var searchBtn=document.querySelector(".search button");
+        var searchBtn=document.querySelector(".search button");
+        var weatherImage=document.querySelector(".weather-icon");
+
         async function checkWeather(city)
         {
 
@@ -60,6 +62,35 @@
             document.querySelector(".humidity").innerHTML=data.main.humidity+"%";
             document.querySelector(".wind").innerHTML=data.wind.speed+"Km/h";
 
+
+            if(data.weather[0].main=="Clouds")
+            {
+              weatherImage.src="images/clouds.png"
+            }
+            else if(data.weather[0].main=="Clear")
+            {
+              weatherImage.src="images/clear.png"
+            }
+            else if(data.weather[0].main=="Drizzle")
+            {
+              weatherImage.src="images/drizzle.png"
+            }
+            else if(data.weather[0].main=="Mist")
+            {
+              weatherImage.src="images/mist.png"
+            }
+            else if(data.weather[0].main=="Rain")
+            {
+              weatherImage.src="images/rain.png"
+            }
+            else if(data.weather[0].main=="Snow")
+            {
+              weatherImage.src="images/snow.png"
+            }
+            else if(data.weather[0].main=="Wind")
+            {
+              weatherImage.src="images/wind.png"
+            }
 
 
         }
